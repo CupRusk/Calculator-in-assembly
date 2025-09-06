@@ -39,5 +39,5 @@ print:
     ret
 
 section .data
-    msg: db "GEY", 0xA
+    msg: db "Hello world!", 0xA
     msg_len: equ $ - msg
