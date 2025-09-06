@@ -15,10 +15,7 @@ section .text
     global _end
 
 _start:
-    mov rax, 5          ; first number
-    mov rbx, 3          ; second number
-
-    call print          ; <-- проблема: всегда печатает статический msg
+    call print          ; <-- проблема была: всегда печатает статический msg
                         ; исправлено: оставлен, но для динамического текста используем print_dynamic
 
     call callculate
